@@ -50,17 +50,21 @@ ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 4px double skyblue;
+  background-color: #87ceeb04;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.95);
   grid-area: 2 / 2 / 3 / 3;
 }
 
+#exercise.end-game {
+  grid-template-rows: auto minmax(auto, 100%) 1fr;
+  padding-top: 1rem;
+}
+
 #exercise {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 1rem;
+  display: grid;
+  grid-template-rows: 33% 67%;
 }
 
 h1 {
@@ -121,14 +125,13 @@ h1 {
 }
 
 #title {
+  padding-top: 0.5rem;
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 .option {
   align-items: center;
-  padding: 0.5rem;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -171,11 +174,13 @@ h1 {
 }
 
 .option .answer-content {
+  padding: 0.25rem 10px 0.25rem 0;
   transition-duration: 0.2s;
 }
 
 .option:hover .answer-content {
-  transform: translateX(10px);
+  padding-right: 0;
+  padding-left: 10px;
 }
 
 .option:hover .answer {
@@ -212,8 +217,8 @@ h1 {
 
 .result-title {
   font-weight: 500;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
+  padding-bottom: 1rem;
 }
 
 .tick-text {
@@ -232,14 +237,17 @@ h1 {
 
 .result-list {
   display: grid;
+  text-indent: 0.5rem;
   grid-template-columns: 1fr 1fr;
 }
 
-.result-characteristic {
+#exercise .result-characteristic {
   font-weight: 500;
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin: 0;
   font-size: 1.2rem;
+  padding: 1rem !important;
+  border: 1px solid skyblue;
+  background: #87ceeb1c;
 }
 
 /*////////////////////*/
@@ -342,6 +350,7 @@ h1 {
     align-items: center;
     justify-content: center;
   }
+
   .option:hover div:before {
     top: calc(50% + 14px);
     left: 15px;
@@ -362,11 +371,13 @@ h1 {
   }
 
   #exercise {
-    padding-top: 2rem;
+    padding-top: 0rem !important;
   }
+
   #title {
-    margin-bottom: 2rem;
+    padding-top: 0;
   }
+
   .wrapper {
     width: 100%;
     padding: 0.5rem;
@@ -386,14 +397,16 @@ h1 {
 
   .result-list {
     grid-template-columns: 1fr;
+    padding: 0.5rem 0;
   }
 
   .characteristic {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0rem;
   }
 
   .result-characteristic, .result-title, #title {
-    font-size: 1rem;
+    font-size: 1rem !important;
+    padding: 0 !important;
   }
 
   .tag-colored {
@@ -411,5 +424,16 @@ h1 {
     margin: 0.5rem auto;
     font-size: 0.9rem !important;
     line-height: 1.6rem !important;
+  }
+
+  #exercise .result-characteristic {
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  .result-characteristic a {
+    text-decoration: underline;
+  }
+  #title .number {
+    min-width: 24px;
   }
 }

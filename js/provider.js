@@ -46,6 +46,7 @@ function nextQuestion() {
 function resultRender() {
   //EI //SN //TF //JP
   $('#exercise').hide();
+  $('#exercise').addClass('end-game');
   $('.description').hide();
 
   let text = '<div class="result-title">Phân tích kết quả: </div>';

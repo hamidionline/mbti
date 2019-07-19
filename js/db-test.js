@@ -1,6 +1,6 @@
-const stringQuestions = `1. Ở các bữa tiệc bạn thường
-a) nói chuyện với nhiều người, kể cả người lạ 
-b) nói chuyện với số ít những người quen thân
+const stringQuestions = `1. Ở các bữa tiệc bạn thường các bữa tiệc bạn thường các bữa tiệc bạn thường các bữa tiệc bạn thường 
+a) nói chuyện với nhiều người, kể cả người lạ nói chuyện với nhiều người, kể cả người lạ nói chuyện với nhiều người, kể cả người lạ
+b) nói chuyện với số ít những người quen thân nói chuyện với số ít những người quen thân nói chuyện với số ít những người quen thân
 
 2. Bạn thấy mình là người thuộc loại nào nhiều hơn?
 a) thực tế
