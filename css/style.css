@@ -22,7 +22,7 @@ ul li {
 
 .bg-top {
   grid-area: 1 / 1 / 1 / 4;
-  background-image: url("img/bg-top.png");
+  background-image: url("../img/bg-top.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ ul li {
 
 .bg-bottom {
   grid-area: 3 / 1 / 3 / 4;
-  background-image: url("img/bg-bottom.png");
+  background-image: url("../img/bg-bottom.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
